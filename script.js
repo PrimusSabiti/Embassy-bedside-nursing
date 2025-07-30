@@ -131,4 +131,73 @@ function animateSectionTitles() {
   });
 }
 window.addEventListener('scroll', animateSectionTitles);
-window.addEventListener('DOMContentLoaded', animateSectionTitles); 
+window.addEventListener('DOMContentLoaded', animateSectionTitles);
+
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = [
+    document.querySelector('.services'),
+    document.querySelector('.gallery'),
+    document.querySelector('.about'),
+    document.querySelector('.testimonials'),
+    document.querySelector('.faq'),
+    document.querySelector('.book-contact')
+  ].filter(Boolean);
+
+  sections.forEach(section => {
+    section.classList.add('fade-in-section');
+  });
+
+  const observer = new window.IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+});
+
+// Lightbox for gallery images
+(function() {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.querySelector('.lightbox-img');
+  const closeBtn = document.querySelector('.lightbox-close');
+  let lastFocused = null;
+
+  function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightbox.style.display = 'flex';
+    setTimeout(() => { lightbox.focus(); }, 10);
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.style.display = 'none';
+    lightboxImg.src = '';
+    document.body.style.overflow = '';
+    if (lastFocused) lastFocused.focus();
+  }
+
+  document.querySelectorAll('.gallery-item img').forEach(img => {
+    img.addEventListener('click', function(e) {
+      lastFocused = document.activeElement;
+      openLightbox(img.getAttribute('data-full') || img.src, img.alt);
+    });
+    img.style.cursor = 'zoom-in';
+  });
+
+  closeBtn.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (lightbox.style.display === 'flex' && (e.key === 'Escape' || e.key === 'Esc')) {
+      closeLightbox();
+    }
+  });
+})(); 

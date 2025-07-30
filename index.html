@@ -14,10 +14,13 @@
     <meta property="og:title" content="Embassy Bedside Nursing and Homecare Services">
     <meta property="og:description" content="Professional bedside nursing and homecare services in Uganda. Certified nurses, 24/7 support, and compassionate care.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourdomain.com/">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+    <meta property="og:url" content="https://embassybedside.com/">
+    <meta property="og:image" content="images/logo.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Embassy Bedside Nursing and Homecare Services">
+    <meta name="twitter:description" content="Professional bedside nursing and homecare services in Uganda. Certified nurses, 24/7 support, and compassionate care.">
+    <meta name="twitter:image" content="images/logo.jpg">
     <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2920/2920277.png">
-    <!-- Favicon will be added next -->
     <!-- IMPORTANT: Serve this site over HTTPS for security and trust -->
 </head>
 <body>
@@ -28,12 +31,14 @@
         <div class="container">
             <nav class="main-nav" aria-label="Main navigation">
                 <div class="logo">
-                    <span class="logo-icon"><i class="fas fa-user-nurse" aria-hidden="true"></i></span>
+                    <img src="images/logo.jpg" alt="Embassy Bedside Nursing Logo" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                    <span class="logo-icon" style="display: none;"><i class="fas fa-user-nurse" aria-hidden="true"></i></span>
                     Embassy <span>Bedside Nursing</span>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
                     <li><a href="#about" class="nav-link">About Us</a></li>
                     <li><a href="#book-contact" class="nav-link">Contact</a></li>
                     <li><a href="#book-contact" class="btn btn-nav">Book Now</a></li>
@@ -44,13 +49,16 @@
             </nav>
         </div>
     </header>
-
+    <hr class="section-divider" aria-hidden="true">
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <svg class="hero-illustration" viewBox="0 0 220 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><ellipse cx="110" cy="60" rx="100" ry="40" fill="#b2dfdb"/><ellipse cx="110" cy="60" rx="70" ry="28" fill="#e3f2fd"/><ellipse cx="110" cy="60" rx="40" ry="16" fill="#fff"/></svg>
+            
+            <img src="images/logo.jpg" alt="Embassy Bedside Nursing Logo" class="hero-logo" onerror="this.style.display='none';" />
             <h1>Your Trusted Partner in Healthcare</h1>
             <p>Are you or your loved ones in need of professional care at home or in a medical facility? Embassy Bedside Nursing provides compassionate and reliable healthcare services tailored to meet your needs.</p>
+            <p style="font-size: 1.1em; color: #009688; font-weight: 600; margin-top: 10px;">Passionate About Life</p>
+            <p style="font-size: 1em; color: #666; margin-top: 5px;">Healthcare at your doorstep</p>
             <div class="cta-buttons">
                 <a href="tel:0770654840" class="btn"><i class="fas fa-phone"></i> Call Us</a>
                 <a href="https://wa.me/256770654840" class="btn"><i class="fab fa-whatsapp"></i> WhatsApp Chat</a>
@@ -59,7 +67,7 @@
             </div>
         </div>
     </section>
-
+    <hr class="section-divider" aria-hidden="true">
     <!-- Trust Badges -->
     <div class="container">
         <div class="trust-badges">
@@ -77,7 +85,7 @@
             </div>
         </div>
     </div>
-
+    <hr class="section-divider" aria-hidden="true">
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
@@ -94,137 +102,102 @@
                     <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20General%20Homecare%20Service%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-pills"></i>
-                    <h3>Drug Administration</h3>
-                    <p>Safe and accurate medication management to ensure proper treatment and recovery.</p>
-                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Drug%20Administration%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
+                    <i class="fas fa-procedures"></i>
+                    <h3>Critical Care Nursing (ICU)</h3>
+                    <p>Specialized intensive care nursing for critically ill patients requiring constant monitoring and care.</p>
+                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Critical%20Care%20Nursing%20(ICU)%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
                 </div>
-                
-                <div class="service-card">
-                    <i class="fas fa-utensils"></i>
-                    <h3>Patient Feeding</h3>
-                    <p>Assistance with meals for proper nutrition and dietary requirements.</p>
-                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Patient%20Feeding%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
-                </div>
-                
-                <div class="service-card">
-                    <i class="fas fa-tint"></i>
-                    <h3>Blood Glucose Monitoring</h3>
-                    <p>Regular diabetic care checks to maintain optimal health levels.</p>
-                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Blood%20Glucose%20Monitoring%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
-                </div>
-                
                 <div class="service-card">
                     <i class="fas fa-heartbeat"></i>
-                    <h3>Vital Signs Monitoring</h3>
-                    <p>Tracking pulse, BP, temperature, and oxygen levels for comprehensive care.</p>
-                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Vital%20Signs%20Monitoring%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
+                    <h3>Patient Monitoring</h3>
+                    <p>Continuous monitoring of vital signs, oxygen levels, and patient condition for optimal care.</p>
+                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Patient%20Monitoring%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
                 </div>
-                
                 <div class="service-card">
-                    <i class="fas fa-shower"></i>
-                    <h3>Bed Bath</h3>
-                    <p>Gentle hygiene assistance for bedridden patients with dignity and respect.</p>
-                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Bed%20Bath%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
+                    <i class="fas fa-user-md"></i>
+                    <h3>Surgical Nursing Care</h3>
+                    <p>Post-operative wound care and recovery support for optimal healing after surgical procedures.</p>
+                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Surgical%20Nursing%20Care%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
                 </div>
-                
-                <div class="service-card">
-                    <i class="fas fa-procedures"></i>
-                    <h3>Surgical Nursing</h3>
-                    <p>Post-operative wound care & recovery support for optimal healing.</p>
-                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Surgical%20Nursing%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
-                </div>
-                
-                <div class="service-card">
-                    <i class="fas fa-baby"></i>
-                    <h3>Post-Natal Care</h3>
-                    <p>Newborn & mother wellness checks during the critical postpartum period.</p>
-                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Post-Natal%20Care%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
-                </div>
-                
                 <div class="service-card">
                     <i class="fas fa-wheelchair"></i>
                     <h3>Physiotherapy</h3>
-                    <p>Mobility improvement & pain relief therapy for enhanced quality of life.</p>
+                    <p>Mobility improvement and pain relief therapy for enhanced quality of life and recovery.</p>
                     <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Physiotherapy%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
                 </div>
+                <div class="service-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Palliative Care</h3>
+                    <p>Compassionate end-of-life care focusing on comfort, dignity, and quality of life.</p>
+                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Palliative%20Care%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-baby"></i>
+                    <h3>Midwife Escorts into Labour Suits</h3>
+                    <p>Professional midwife support and escort services during labor and delivery.</p>
+                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Midwife%20Escorts%20into%20Labour%20Suits%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-baby-carriage"></i>
+                    <h3>Post Natal Care</h3>
+                    <p>Newborn and mother wellness checks during the critical postpartum period.</p>
+                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Post%20Natal%20Care%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-user-nurse"></i>
+                    <h3>Post Abortal Care</h3>
+                    <p>Comprehensive care and support following abortion procedures for physical and emotional recovery.</p>
+                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Post%20Abortal%20Care%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Homebased Lab Sample Collection</h3>
+                    <p>Convenient laboratory sample collection services in the comfort of your home.</p>
+                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Homebased%20Lab%20Sample%20Collection%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-syringe"></i>
+                    <h3>Yellow Fever Vaccination</h3>
+                    <p>Professional yellow fever vaccination services for travel and health requirements.</p>
+                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Yellow%20Fever%20Vaccination%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Professional Care Givers</h3>
+                    <p>Skilled and compassionate caregivers for long-term care and support needs.</p>
+                    <a href="https://wa.me/256770654840?text=Hello%20Embassy%20Bedside%20Nursing%20Team%2C%0A%0AI%20would%20like%20to%20book%20the%20following%20service%3A%20Professional%20Care%20Givers%0AMy%20name%20is%3A%20%0AMy%20phone%20number%20is%3A%20%0AMy%20location%20is%3A%20%0AAdditional%20info%3A%20" class="btn btn-small">Book this Service</a>
+                </div>
             </div>
-            
         </div>
     </section>
-
-    <!-- Combined Book a Service & Contact Section -->
-<section class="book-contact" id="book-contact">
-  <div class="container">
-    <div class="section-title">
-      <h2>Book a Service or Contact Us</h2>
-      <p>Reach out for professional healthcare services or book a service directly</p>
-    </div>
-    <div class="book-contact-grid">
-      <div class="book-form-col">
-        <div class="booking-form">
-          <h3>Book a Service</h3>
-          <form aria-label="Book a Service">
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" required>
+    <hr class="section-divider" aria-hidden="true">
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services in Action</h2>
+                <p>See our professional healthcare services in action</p>
             </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" required>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/p1.jpg" alt="Embassy Bedside Nursing Service" loading="lazy" onerror="this.style.display='none';" data-full="images/p1.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/p2.jpg" alt="Professional Nursing Care" loading="lazy" onerror="this.style.display='none';" data-full="images/p2.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/behind car.jpg" alt="Mobile Nursing Services" loading="lazy" onerror="this.style.display='none';" data-full="images/behind car.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/flyer1.jpg" alt="Embassy Bedside Nursing Flyer" loading="lazy" onerror="this.style.display='none';" data-full="images/flyer1.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/tyre logo.jpg" alt="Embassy Bedside Nursing Branding" loading="lazy" onerror="this.style.display='none';" data-full="images/tyre logo.jpg">
+                </div>
             </div>
-            <div class="form-group">
-              <label for="service">Service Needed</label>
-              <select id="service" required>
-                <option value="">Select a service</option>
-                <option value="General Homecare Service">General Homecare Service (Consultation, Assessment, or Other Needs)</option>
-                <option value="Drug Administration">Drug Administration</option>
-                <option value="Patient Feeding">Patient Feeding</option>
-                <option value="Blood Glucose Monitoring">Blood Glucose Monitoring</option>
-                <option value="Vital Signs Monitoring">Vital Signs Monitoring</option>
-                <option value="Bed Bath">Bed Bath</option>
-                <option value="Surgical Nursing">Surgical Nursing</option>
-                <option value="Post-Natal Care">Post-Natal Care</option>
-                <option value="Physiotherapy">Physiotherapy</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="location">Client Location</label>
-              <input type="text" id="location" required>
-            </div>
-            <div class="form-group">
-              <label for="date">Preferred Date</label>
-              <input type="date" id="date" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Additional Information</label>
-              <textarea id="message"></textarea>
-            </div>
-            <button type="submit" class="btn">Submit via WhatsApp</button>
-          </form>
         </div>
-      </div>
-      <div class="contact-info-col">
-        <div class="contact-info">
-          <h3>Contact Us</h3>
-          <p><a href="https://maps.google.com/?q=Amazing+Grace+Medical+Centre,+Opposite+Kireka+Shopping+Centre" target="_blank"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Amazing Grace Medical Centre, Opposite Kireka Shopping Centre</a></p>
-          <p><a href="tel:0770654840"><i class="fas fa-phone" aria-hidden="true"></i> 0770654840 (Click to Call)</a></p>
-          <p><a href="https://wa.me/256770654840"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Chat</a></p>
-          <p><a href="mailto:innocentziiwa40@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> innocentziiwa40@gmail.com</a></p>
-          <h3 style="margin-top: 30px;">Follow Us</h3>
-          <div class="social-links">
-            <a href="https://www.tiktok.com/@tukundaneinnocentzziwa?_t=ZM-8yADNM37r30&_r=1"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
-            <a href="https://wa.me/256770654840"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-          </div>
-          <div class="map-container" style="margin-top:30px;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.746343251614!2d32.61281431475395!3d0.3479999999999595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMjAnNTIuOCJOIDMywrAzNic1NS4xIkU!5e0!3m2!1sen!2sug!4v1620000000000!5m2!1sen!2sug" allowfullscreen="" loading="lazy" width="600" height="400" title="Embassy Bedside Nursing Location" aria-label="Map showing Embassy Bedside Nursing location"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
+    <hr class="section-divider" aria-hidden="true">
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
@@ -240,12 +213,12 @@
                     <p style="margin-top: 20px;">Our mission is to provide exceptional healthcare services that enhance the quality of life for our patients while giving peace of mind to their families.</p>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Nurse caring for patient at Embassy Bedside Nursing" width="600" height="400" loading="lazy">
+                    <img src="images/p1.jpg" alt="Nurse caring for patient at Embassy Bedside Nursing" width="600" height="400" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';">
                 </div>
             </div>
         </div>
     </section>
-
+    <hr class="section-divider" aria-hidden="true">
     <!-- Testimonials Section -->
     <section class="testimonials">
         <div class="container">
@@ -272,20 +245,95 @@
             </div>
         </div>
     </section>
-
+    <hr class="section-divider" aria-hidden="true">
+    <!-- Combined Book a Service & Contact Section -->
+    <section class="book-contact" id="book-contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Book a Service or Contact Us</h2>
+                <p>Reach out for professional healthcare services or book a service directly</p>
+            </div>
+            <div class="book-contact-grid">
+                <div class="book-form-col">
+                    <div class="booking-form">
+                        <h3>Book a Service</h3>
+                        <form aria-label="Book a Service">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Needed</label>
+                                <select id="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="General Homecare Service">General Homecare Service (Consultation, Assessment, or Other Needs)</option>
+                                    <option value="Critical Care Nursing (ICU)">Critical Care Nursing (ICU)</option>
+                                    <option value="Patient Monitoring">Patient Monitoring</option>
+                                    <option value="Surgical Nursing Care">Surgical Nursing Care</option>
+                                    <option value="Physiotherapy">Physiotherapy</option>
+                                    <option value="Palliative Care">Palliative Care</option>
+                                    <option value="Midwife Escorts into Labour Suits">Midwife Escorts into Labour Suits</option>
+                                    <option value="Post Natal Care">Post Natal Care</option>
+                                    <option value="Post Abortal Care">Post Abortal Care</option>
+                                    <option value="Homebased Lab Sample Collection">Homebased Lab Sample Collection</option>
+                                    <option value="Yellow Fever Vaccination">Yellow Fever Vaccination</option>
+                                    <option value="Professional Care Givers">Professional Care Givers</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Client Location</label>
+                                <input type="text" id="location" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Additional Information</label>
+                                <textarea id="message"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Submit via WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact-info-col">
+                    <div class="contact-info">
+                        <h3>Contact Us</h3>
+                        <p><a href="https://maps.google.com/?q=Amazing+Grace+Medical+Centre,+Opposite+Kireka+Shopping+Centre" target="_blank"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Amazing Grace Medical Centre, Opposite Kireka Shopping Centre</a></p>
+                        <p><a href="tel:0770654840"><i class="fas fa-phone" aria-hidden="true"></i> 0770654840 (Click to Call)</a></p>
+                        <p><a href="https://wa.me/256770654840"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Chat</a></p>
+                        <p><a href="mailto:innocentzziwa40@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> innocentzziwa40@gmail.com</a></p>
+                        <h3 style="margin-top: 30px;">Follow Us</h3>
+                        <div class="social-links">
+                            <a href="https://www.tiktok.com/@tukundaneinnocentzziwa?_t=ZM-8yADNM37r30&_r=1"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                            <a href="https://wa.me/256770654840"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="map-container" style="margin-top:30px;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.746343251614!2d32.61281431475395!3d0.3479999999999595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMjAnNTIuOCJOIDMywrAzNic1NS4xIkU!5e0!3m2!1sen!2sug!4v1620000000000!5m2!1sen!2sug" allowfullscreen="" loading="lazy" width="600" height="400" title="Embassy Bedside Nursing Location" aria-label="Map showing Embassy Bedside Nursing location"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="section-divider" aria-hidden="true">
     <!-- FAQ Section -->
     <section class="faq" id="faq" aria-labelledby="faq-title">
-      <div class="container">
-        <div class="section-title">
-          <h2 id="faq-title">Frequently Asked Questions</h2>
-          <p>Answers to common questions about our services</p>
+        <div class="container">
+            <div class="section-title">
+                <h2 id="faq-title">Frequently Asked Questions</h2>
+                <p>Answers to common questions about our services</p>
+            </div>
+            <ul style="max-width:700px;margin:0 auto;list-style-type:none;padding:0;">
+                <li><strong>What areas do you serve?</strong><br>We serve Kampala and surrounding areas. Contact us for special requests.</li>
+                <li><strong>Are your nurses certified?</strong><br>Yes, all our nurses are certified and licensed by the Ministry of Health.</li>
+                <li><strong>How do I book a service?</strong><br>Use the booking form above or call/WhatsApp us directly.</li>
+            </ul>
         </div>
-        <ul style="max-width:700px;margin:0 auto;list-style-type:none;padding:0;">
-          <li><strong>What areas do you serve?</strong><br>We serve Kampala and surrounding areas. Contact us for special requests.</li>
-          <li><strong>Are your nurses certified?</strong><br>Yes, all our nurses are certified and licensed by the Ministry of Health.</li>
-          <li><strong>How do I book a service?</strong><br>Use the booking form above or call/WhatsApp us directly.</li>
-        </ul>
-      </div>
     </section>
 
     <!-- Footer -->
@@ -303,19 +351,18 @@
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#privacy">Privacy Policy</a></li>
-                        <li><a href="#terms">Terms of Service</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
                     <h3>Services</h3>
                     <ul>
-                        <li><a href="#services">Drug Administration</a></li>
-                        <li><a href="#services">Patient Feeding</a></li>
-                        <li><a href="#services">Vital Signs Monitoring</a></li>
+                        <li><a href="#services">Critical Care Nursing</a></li>
+                        <li><a href="#services">Patient Monitoring</a></li>
+                        <li><a href="#services">Physiotherapy</a></li>
                         <li><a href="#services">Post-Natal Care</a></li>
                     </ul>
                 </div>
@@ -325,7 +372,7 @@
                     <ul>
                         <li><a href="https://maps.google.com/?q=Amazing+Grace+Medical+Centre,+Opposite+Kireka+Shopping+Centre" target="_blank"><i class="fas fa-map-marker-alt"></i> Amazing Grace Medical Centre</a></li>
                         <li><a href="tel:0770654840"><i class="fas fa-phone"></i> 0770654840</a></li>
-                        <li><a href="mailto:innocentziiwa40@gmail.com"><i class="fas fa-envelope"></i> innocentziiwa40@gmail.com</a></li>
+                        <li><a href="mailto:innocentzziwa40@gmail.com"><i class="fas fa-envelope"></i> innocentzziwa40@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
@@ -337,46 +384,14 @@
         </div>
     </footer>
 
-    <!-- Privacy Policy Section -->
-<section id="privacy" style="background:#f8f9fa;padding:60px 0;">
-  <div class="container">
-    <div class="section-title">
-      <h2>Privacy Policy</h2>
-    </div>
-    <div style="max-width:800px;margin:0 auto;font-size:1.05em;line-height:1.7;color:#444;">
-      <p><strong>Last updated:</strong> July 2024</p>
-      <p>We value your privacy. Embassy Bedside Nursing and Homecare Services collects only the information necessary to provide our services, such as your name, contact details, and service preferences. We do not share your personal information with third parties except as required to deliver our services or by law.</p>
-      <p>We use your information to respond to your inquiries, process bookings, and improve our services. Your data is stored securely and is accessible only to authorized personnel. You may request to review, update, or delete your information at any time by contacting us.</p>
-      <p>By using our website or services, you consent to this privacy policy. We may update this policy from time to time; changes will be posted on this page.</p>
-      <p>If you have any questions about our privacy practices, please contact us at <a href="mailto:innocentziiwa40@gmail.com">innocentziiwa40@gmail.com</a>.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Terms of Service Section -->
-<section id="terms" style="background:#f4f6f8;padding:60px 0;">
-  <div class="container">
-    <div class="section-title">
-      <h2>Terms of Service</h2>
-    </div>
-    <div style="max-width:800px;margin:0 auto;font-size:1.05em;line-height:1.7;color:#444;">
-      <p><strong>Last updated:</strong> July 2024</p>
-      <p>By using Embassy Bedside Nursing and Homecare Services, you agree to the following terms:</p>
-      <ul style="margin-left:20px;">
-        <li>All information provided on this site is for general informational purposes and does not constitute medical advice.</li>
-        <li>Service bookings are subject to availability and confirmation by our team.</li>
-        <li>Clients are responsible for providing accurate information when booking services.</li>
-        <li>We reserve the right to refuse or cancel services at our discretion.</li>
-        <li>All content on this website is the property of Embassy Bedside Nursing and may not be reproduced without permission.</li>
-        <li>We are not liable for any damages arising from the use of our website or services, except as required by law.</li>
-      </ul>
-      <p>For questions about these terms, please contact us at <a href="mailto:innocentziiwa40@gmail.com">innocentziiwa40@gmail.com</a>.</p>
-    </div>
-  </div>
-</section>
-
     <!-- Toast container for feedback -->
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <div id="lightbox" class="lightbox" tabindex="-1" aria-modal="true" role="dialog" style="display:none;">
+        <span class="lightbox-close" role="button" aria-label="Close">&times;</span>
+        <img class="lightbox-img" src="" alt="Gallery Image" />
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
